@@ -77,12 +77,13 @@ nav{
 .h-stat .l{font-size:.72rem;color:#88BBDD;letter-spacing:.5px;text-transform:uppercase;margin-top:2px}
 .hero-btns{display:flex;gap:16px;flex-wrap:wrap}
 .btn-p,.btn-s{
-  padding:15px 38px;border-radius:5px;text-decoration:none;transition:.25s;font-size:.98rem
+  padding:13px 26px;border-radius:7px;text-decoration:none;transition:.25s;font-size:.84rem;
+  display:inline-flex;align-items:center;gap:8px;font-weight:700;letter-spacing:.3px;font-family:inherit
 }
 .btn-p{background:var(--orange);color:#fff;font-weight:700;border:2px solid var(--orange)}
-.btn-p:hover{background:#c44400;border-color:#c44400;transform:translateY(-2px)}
+.btn-p:hover{background:#c44400;border-color:#c44400;transform:translateY(-1px)}
 .btn-s{background:transparent;color:#fff;font-weight:600;border:2px solid rgba(255,255,255,.35)}
-.btn-s:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-s:hover{border-color:#fff;background:rgba(255,255,255,.08);transform:translateY(-1px)}
 
 section{padding:96px 8%}
 .s-label{font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;color:var(--orange);margin-bottom:10px}
@@ -145,7 +146,6 @@ section{padding:96px 8%}
   font-size:.72rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;
   pointer-events:none;text-shadow:0 1px 4px rgba(0,0,0,.25);padding:6px 10px;border-radius:999px;
 }
-.img-cap{text-align:center;margin-top:12px;font-size:.84rem;color:var(--grey);font-style:italic}
 .show-2col{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .show-2col figure{margin:0}
 .show-2col img{
@@ -153,7 +153,6 @@ section{padding:96px 8%}
   box-shadow:0 8px 28px rgba(0,0,0,.14);display:block;
 }
 .show-2col img.contain-img{object-fit:contain;background:#eef3f7;padding:10px}
-.show-2col figcaption{text-align:center;font-size:.8rem;color:var(--grey);font-style:italic;margin-top:8px}
 
 .numbers{
   background:var(--orange);padding:0 8%;
@@ -252,7 +251,6 @@ section{padding:96px 8%}
   overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
 .transport-grid img{width:100%;height:320px;object-fit:cover;display:block}
-.transport-grid figcaption{padding:14px 16px;font-size:.88rem;color:var(--grey)}
 
 .road-bg{background:linear-gradient(180deg,var(--light),#fff)}
 .timeline{position:relative;display:flex;flex-direction:column;gap:0;padding-left:0}
@@ -374,7 +372,6 @@ footer span{font-size:.78rem;color:#4a5a68}
 .hiw-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
 .hiw-photo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;overflow:hidden}
 .hiw-photo img{display:block;width:100%;height:180px;object-fit:cover}
-.hiw-photo figcaption{padding:10px 12px;font-size:.76rem;color:#a8c4d8;line-height:1.4}
 @media(max-width:680px){.hiw-steps{grid-template-columns:1fr 1fr}.hiw-steps::before{display:none}.hiw-note{grid-template-columns:1fr}}
 @media(max-width:680px){.hiw-photos{grid-template-columns:1fr}.hiw-photo img{height:160px}}
 .mod-badge.yellow{background:#FFF3CC;color:#7a5500}
@@ -490,7 +487,7 @@ footer span{font-size:.78rem;color:#4a5a68}
   .h-stat .v{font-size:1.45rem}
   .h-stat .l{font-size:.64rem}
   .hero-btns{flex-direction:column}
-  .btn-p,.btn-s{width:100%;text-align:center}
+  .btn-p,.btn-s,.btn-pdf,.btn-docx{width:100%;text-align:center;justify-content:center}
   .tab-bar{
     flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px;margin-right:-5%;padding-right:5%;
     scrollbar-width:none;
@@ -506,7 +503,6 @@ footer span{font-size:.78rem;color:#4a5a68}
   .sol-li{font-size:.82rem}
   .show-2col img,.transport-grid img{height:210px}
   .transport-grid figure,.app-card,.adv-card,.pp-item,.ap,.tl-body{border-radius:10px}
-  .transport-grid figcaption,.show-2col figcaption,.img-cap{font-size:.76rem}
   .timeline::before{left:18px}
   .tl-item{gap:14px}
   .tl-dot{width:38px;height:38px;font-size:.85rem}
@@ -535,6 +531,11 @@ footer span{font-size:.78rem;color:#4a5a68}
   footer{padding:22px 5%}
   .contact-bg{padding:52px 5%}
 }
+.btn-pdf{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:#E05206;color:#fff;border:2px solid #E05206;border-radius:7px;font-size:.84rem;font-weight:700;letter-spacing:.3px;cursor:pointer;transition:.2s;text-decoration:none;font-family:inherit}
+.btn-pdf:hover{background:#c44800;border-color:#c44800;transform:translateY(-1px)}
+.btn-docx{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:#1B6FA8;color:#fff;border:2px solid #1B6FA8;border-radius:7px;font-size:.84rem;font-weight:700;letter-spacing:.3px;cursor:pointer;transition:.2s;text-decoration:none;font-family:inherit}
+.btn-docx:hover{background:#155d8e;border-color:#155d8e;transform:translateY(-1px)}
+.pdf-float{position:fixed;bottom:28px;right:28px;z-index:9999;box-shadow:0 6px 24px rgba(224,82,6,.45)}
 </style>
 </head>
 <body>
@@ -575,9 +576,12 @@ footer span{font-size:.78rem;color:#4a5a68}
     </div>
     <div class="hero-btns">
       <a class="btn-s" href="#vessel">Смотреть судно ↓</a>
+      <a class="btn-pdf" href="ASV-11-Memorandum-2026.pdf" download>⬇ Скачать меморандум PDF</a>
+      <a class="btn-docx" href="ASV-11-Технический-паспорт.docx" download>📄 Технический паспорт .docx</a>
     </div>
   </div>
 </section>
+<a class="btn-pdf pdf-float" href="ASV-11-Memorandum-2026.pdf" download title="Скачать инвест-меморандум PDF">⬇ PDF</a>
 
 <section class="problem-bg" id="concept">
   <div class="s-label">Концепция и задача</div>
@@ -590,7 +594,7 @@ footer span{font-size:.78rem;color:#4a5a68}
           <div class="pp-icon">💰</div>
           <div class="pp-body">
             <h4>Высокая стоимость экспедиций</h4>
-            <p>Аренда судна с экипажем — от $10 000/сутки. Большинство арктических миссий недоступны для средних компаний.</p>
+            <p>Аренда исследовательского судна с экипажем обходится чрезвычайно дорого. Большинство арктических миссий недоступны для средних компаний.</p>
           </div>
         </div>
         <div class="pp-item rv">
@@ -649,21 +653,17 @@ footer span{font-size:.78rem;color:#4a5a68}
   <div class="panels">
     <div id="p0" class="on">
       <div class="img-watermark-wrap"><img class="show-img" src="assets/images/main-side-title.webp" alt="ASV-11 главный вид"></div>
-      <p class="img-cap">ASV-11 — главный ракурс с названием.</p>
     </div>
     <div id="p1">
       <div class="img-watermark-wrap"><img class="show-img" src="assets/images/hero-front.webp" alt="ASV-11 вид спереди"></div>
-      <p class="img-cap">Фронтальный вид катамарана.</p>
     </div>
     <div id="p2">
       <div class="show-2col">
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/front-main.webp" alt="ASV-11 нос"></div>
-          <figcaption>Нос — основной ракурс.</figcaption>
         </figure>
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/front-narrow.webp" alt="ASV-11 нос узкий ракурс"></div>
-          <figcaption>Корма — узкий ракурс.</figcaption>
         </figure>
       </div>
     </div>
@@ -671,27 +671,22 @@ footer span{font-size:.78rem;color:#4a5a68}
       <div class="show-2col">
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/side.webp" alt="ASV-11 вид сбоку"></div>
-          <figcaption>Профиль судна.</figcaption>
         </figure>
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/top.webp" alt="ASV-11 вид сверху"></div>
-          <figcaption>Вид сверху.</figcaption>
         </figure>
       </div>
     </div>
     <div id="p4">
       <div class="img-watermark-wrap"><img class="show-img" src="assets/images/isometric.webp" alt="ASV-11 изометрия"></div>
-      <p class="img-cap">Изометрический рендер для технической презентации.</p>
     </div>
     <div id="p5">
       <div class="show-2col">
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/deck-transport.webp" alt="ASV-11 палуба перевозка"></div>
-          <figcaption>Палуба / перевозка.</figcaption>
         </figure>
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/on-platform.webp" alt="ASV-11 на носителе"></div>
-          <figcaption>Судно на платформе.</figcaption>
         </figure>
       </div>
     </div>
@@ -699,11 +694,9 @@ footer span{font-size:.78rem;color:#4a5a68}
       <div class="show-2col">
         <figure>
           <div class="img-watermark-wrap zoomable"><img src="assets/images/cassette-new.png" alt="Модульная кассета ASV-11 — новое фото"></div>
-          <figcaption>Модульная кассета — силовой каркас с лебёдкой.</figcaption>
         </figure>
         <figure>
           <div class="img-watermark-wrap"><img src="assets/images/eco-module.png" alt="Экологический модуль — батометры Нискина"></div>
-          <figcaption>Гидрологический / экологический модуль — батометры Нискина и CTD-зонд.</figcaption>
         </figure>
       </div>
     </div>
@@ -926,11 +919,9 @@ footer span{font-size:.78rem;color:#4a5a68}
   <div class="hiw-photos rv">
     <figure class="hiw-photo">
       <img src="assets/images/module-lift.png" alt="Подъём модуля краном с борта судна-носителя">
-      <figcaption>Подъём модуля краном с борта носителя перед перестановкой.</figcaption>
     </figure>
     <figure class="hiw-photo">
       <img src="assets/images/module-lower.png" alt="Спуск модуля на палубу ASV-11">
-      <figcaption>Спуск и позиционирование модуля на палубе ASV-11.</figcaption>
     </figure>
   </div>
 </section>
@@ -1075,11 +1066,9 @@ footer span{font-size:.78rem;color:#4a5a68}
   <div class="transport-grid">
     <figure class="rv">
       <div class="img-watermark-wrap"><img src="assets/images/disassembled-deck.webp" alt="ASV-11 в разборе на палубе"></div>
-      <figcaption>Судно в разборе на палубе в процессе перевозки.</figcaption>
     </figure>
     <figure class="rv">
       <div class="img-watermark-wrap"><img src="assets/images/disassembled-container.webp" alt="ASV-11 в контейнере"></div>
-      <figcaption>Разобранный комплект, размещённый в контейнере.</figcaption>
     </figure>
   </div>
 </section>
@@ -1166,6 +1155,7 @@ window.addEventListener('scroll', () => {
     a.classList.toggle('active', a.getAttribute('href') === '#' + cur);
   });
 });
+
 
 document.addEventListener('contextmenu', e => e.preventDefault());
 document.addEventListener('copy', e => e.preventDefault());

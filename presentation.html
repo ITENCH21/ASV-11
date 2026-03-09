@@ -73,9 +73,14 @@ body{padding:18px}
   box-shadow:0 18px 40px rgba(0,0,0,.18);
 }
 .cover-card h3{margin:0 0 14px;font-size:18px;color:#fff;letter-spacing:.01em}
-.cover-list{display:grid;gap:12px}
-.cover-list div{
-  display:block;
+.cover-list{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:12px;
+}
+.cover-list li{
   font-size:14px;
   line-height:1.5;
   color:#e6eef4;
@@ -83,7 +88,7 @@ body{padding:18px}
   position:relative;
   text-shadow:0 1px 2px rgba(0,0,0,.22);
 }
-.cover-list div::before{
+.cover-list li::before{
   content:"";
   position:absolute;
   left:0;
@@ -240,12 +245,12 @@ body{padding:18px}
         </div>
         <div class="cover-card">
           <h3>Ключевая идея</h3>
-          <div class="cover-list">
-            <div>Одна платформа заменяет несколько специализированных судов малой миссии.</div>
-            <div>Смена модуля выполняется краном с борта носителя без захода в порт.</div>
-            <div>Транспортировка в ISO 20'/40' контейнере и разборка на три части.</div>
-            <div>Снижение стоимости морских миссий в 3-5 раз по сравнению с классическим судном.</div>
-          </div>
+          <ul class="cover-list">
+            <li>Одна платформа заменяет несколько специализированных судов малой миссии.</li>
+            <li>Смена модуля выполняется краном с борта носителя без захода в порт.</li>
+            <li>Транспортировка в ISO 20'/40' контейнере и разборка на три части.</li>
+            <li>Снижение стоимости морских миссий в 3-5 раз по сравнению с классическим судном.</li>
+          </ul>
         </div>
       </div>
       <div class="footer-line">
@@ -325,42 +330,42 @@ body{padding:18px}
       <h2 class="title">Пять типов оборудования на одной <span>базовой платформе</span></h2>
       <div class="module-grid">
         <article class="module">
-          <img src="assets/images/mod-geo.png" alt="Геохимический модуль">
+          <img src="assets/images/mod-geo-presentation.jpg" alt="Геохимический модуль">
           <div class="module-body">
             <h4>Геохимия / грунт</h4>
             <p>Серийный отбор проб, трубки, дночерпатели, координатная привязка и автоматическая подача.</p>
           </div>
         </article>
         <article class="module">
-          <img src="assets/images/mod-hydro.png" alt="Гидрологический модуль">
+          <img src="assets/images/mod-hydro-presentation.jpg" alt="Гидрологический модуль">
           <div class="module-body">
             <h4>Гидрология / CTD</h4>
             <p>CTD-зонд, батометры Нискина, профиль температуры, солёности, кислорода и мутности.</p>
           </div>
         </article>
         <article class="module">
-          <img src="assets/images/mod-oceanology.png" alt="Океанологический модуль">
+          <img src="assets/images/mod-oceanology-presentation.jpg" alt="Океанологический модуль">
           <div class="module-body">
             <h4>Донные станции</h4>
             <p>Постановка и подъём 4-6 станций с акустическим релизом и буйковой системой обнаружения.</p>
           </div>
         </article>
         <article class="module">
-          <img src="assets/images/mod-rov.png" alt="ROV модуль">
+          <img src="assets/images/mod-rov-presentation.jpg" alt="ROV модуль">
           <div class="module-body">
             <h4>ROV / ТНПА</h4>
             <p>Спуск аппарата до 200 кг, ретрансляция связи, USBL-привязка и видеоинспекция.</p>
           </div>
         </article>
         <article class="module">
-          <img src="assets/images/mod-geo2.png" alt="Буксируемый модуль">
+          <img src="assets/images/mod-geo2-presentation.jpg" alt="Буксируемый модуль">
           <div class="module-body">
             <h4>Буксируемые системы</h4>
             <p>ГБО, профилограф, магнитометр и другие геофизические инструменты в одном модуле.</p>
           </div>
         </article>
         <article class="module">
-          <img src="assets/images/cassette-new.png" alt="Кассета ASV-11">
+          <img src="assets/images/cassette-new-presentation.jpg" alt="Кассета ASV-11">
           <div class="module-body">
             <h4>Единая кассета</h4>
             <p>Силовой каркас, лебёдка и интерфейс питания/данных в едином типоразмере для быстрой замены.</p>

@@ -371,7 +371,12 @@ footer span{font-size:.78rem;color:#4a5a68}
 .hiw-note{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-left:3px solid var(--orange);border-radius:8px;padding:18px 22px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
 .hiw-note-item{display:flex;align-items:flex-start;gap:10px;font-size:.83rem;color:#a8c4d8;line-height:1.5}
 .hiw-note-item::before{content:'✓';color:var(--orange);font-weight:800;flex-shrink:0;margin-top:1px}
+.hiw-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:18px}
+.hiw-photo{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:8px;overflow:hidden}
+.hiw-photo img{display:block;width:100%;height:180px;object-fit:cover}
+.hiw-photo figcaption{padding:10px 12px;font-size:.76rem;color:#a8c4d8;line-height:1.4}
 @media(max-width:680px){.hiw-steps{grid-template-columns:1fr 1fr}.hiw-steps::before{display:none}.hiw-note{grid-template-columns:1fr}}
+@media(max-width:680px){.hiw-photos{grid-template-columns:1fr}.hiw-photo img{height:160px}}
 .mod-badge.yellow{background:#FFF3CC;color:#7a5500}
 .mod-badge.blue{background:#DCEEFF;color:#1B6FA8}
 .mod-badge.slate{background:#eef1f3;color:#3a5060}
@@ -917,6 +922,16 @@ footer span{font-size:.78rem;color:#4a5a68}
     <div class="hiw-note-item">У каждого модуля своя лебёдка и электроника: поломка одного модуля не влияет на остальные</div>
     <div class="hiw-note-item">Внутренний блок можно переоснастить под другую задачу не меняя внешний каркас — гибкость без новых инвестиций</div>
     <div class="hiw-note-item">Смена занимает минуты на открытой воде при волнении до 3 баллов — не нужно идти в порт</div>
+  </div>
+  <div class="hiw-photos rv">
+    <figure class="hiw-photo">
+      <img src="assets/images/module-lift.png" alt="Подъём модуля краном с борта судна-носителя">
+      <figcaption>Подъём модуля краном с борта носителя перед перестановкой.</figcaption>
+    </figure>
+    <figure class="hiw-photo">
+      <img src="assets/images/module-lower.png" alt="Спуск модуля на палубу ASV-11">
+      <figcaption>Спуск и позиционирование модуля на палубе ASV-11.</figcaption>
+    </figure>
   </div>
 </section>
 
